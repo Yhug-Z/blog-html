@@ -1,0 +1,64 @@
+#layer1{
+    overflow: hidden;
+    width: 1140px;
+    height: 452px;
+    border: solid 0px ;
+    margin: 20px auto;
+    padding: 2px;
+}
+
+#layer1 .lleft{
+    float: left;
+    position: relative;
+    border: solid red 0px;
+}
+#layer1 .lleft img{
+    width: 752px;
+    height: 452px;
+}
+#layer1 .lleft p{
+    /* width: 752px; */
+    width: 712px;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.3);
+    bottom: 80px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size:24px;
+    color: #fff; 
+}
+#layer1 .lleft ul{
+    position: absolute;
+    overflow: hidden;
+    bottom: 25px;
+    left:319px ;
+}
+#layer1 .lleft ul li{
+    float: left;
+    background-color: #fff;
+    border-radius:50%;
+    width: 18px;
+    height: 18px; 
+    margin: 10px;
+    cursor: pointer;
+}
+#layer1 .lleft ul .focus{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#layer1 .lright{
+    float: right;
+    /* padding: 2px; */
+    width: 365px;
+    height: 550px;
+}
+#layer1 .lright .box{
+    /* margin: 5px; */
+}
+#layer1 .lright .box img{
+    width: 365px;
+    height: 216px;
+}
+#layer1 .lright .box:nth-child(1){
+    margin-bottom:16px ;
+}

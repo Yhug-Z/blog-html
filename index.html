@@ -7,29 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/system.js"></script>
+
 </head>
-
+    
 <body>
-    <div id="nav">
-        <div class="con">
-            <div class="log">个人博客</div>
-
-            <ul>
-                <li>网站首页</li>
-                <li>文章列表</li>
-                <li>我的相册</li>
-                <li>时间轴</li>
-                <li>留言</li>
-                <li>关于我</li>
-                <li>发表博客</li>
-            </ul>
-
-            <div class="act">
-                <a href="">登入</a>
-                <a href="">注册</a>
+    <div id="layer1">
+        <div class="lleft">
+            <div class="swipe">
+                <img src="images/banner01.jpg" alt="">
+                <p>hhhh</p>
+                <ul>
+                    <li class="focus"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
+        <div class="lright">
+            <div class="box"><img src="images/toppic01.jpg" alt=""></div>
+            <div class="box"><img src="images/zd01.jpg" alt=""></div>
+        </div>
+
     </div>
 </body>
-
+    <script>
+        var layer1Imgs=["images/banner01.jpg",
+                        "images/banner02.jpg",
+                        "images/banner03.jpg" ]
+        console.log(layer1Imgs.length);
+        $(function(){
+            $("body").prepend($(index.nav.html()));
+            index.nav.event();
+            index.imgsEvent.imgsSwitch(layer1Imgs,$("#layer1 .lleft .swipe ul li"),$("#layer1 .lleft .swipe img"));
+        })
+        
+    </script>
 </html>

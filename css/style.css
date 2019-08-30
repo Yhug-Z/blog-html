@@ -74,5 +74,7 @@ a{
 #nav .con .act>a{
     color: #fff;
     margin: 0 10px;
-
+}
+#nav .focus{
+    color: rgb(137, 220, 235);
 }
