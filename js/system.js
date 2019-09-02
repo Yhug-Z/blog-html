@@ -37,29 +37,31 @@ index.nav = {
                 $(this).removeClass("focus");
             })
         })
-}
+    }
 }
 
-index.imgsEvent={
-    imgsSwitch:function(imgs,lis,elemImg){
-        var n=-1
-        lis.each(function(i,elem){
-            $(this).on("click",function(){
-                $.each(imgs,function(j,img){
-                
-                if(i==j){
-                    $(lis[j]).addClass("focus");
-                    // console.log(imgs[j]);
-                    elemImg.attr("src",imgs[j]);
-                n=j;}
-                else{
-                    $(lis[j]).removeClass("focus");
-                }
-            })})
+index.imgsEvent = {
+    imgsSwitch: function (imgs, lis, elemImg) {
+        var n = -1
+        lis.each(function (i, elem) {
+            $(this).on("click", function () {
+                $.each(imgs, function (j, img) {
+
+                    if (i == j) {
+                        $(lis[j]).addClass("focus");
+                        // console.log(imgs[j]);
+                        elemImg.attr("src", imgs[j]);
+                        n = j;
+                    }
+                    else {
+                        $(lis[j]).removeClass("focus");
+                    }
+                })
+            })
         })
-        setInterval(function(){
+        setInterval(function () {
             // console.log(lis[(++n) % imgs.length]);
-            lis[(++n)%imgs.length].click();
-        },3000);
+            lis[(++n) % imgs.length].click();
+        }, 3000);
     }
 }

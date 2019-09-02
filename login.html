@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+    <img src="images/b.jpg" alt="" id="bg">
+    
+    <div id="log">
+        <h3>登录</h3>
+        <hr>
+        <form action="" onsubmit="return sub();">
+            <div>
+                <input type="txt" class="txt" id="username" name="username" placeholder="请输入用户名"> 
+            </div>
+            <div>
+                    <input type="password" class="txt" id="userpass" name="userpass" placeholder="请输入密码">
+            </div>
+            <div>
+                    <!-- <input type="txt" class="txt" > -->
+                    <button class="btn">提交</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        window.onresize=function(){
+        $("#bg").css({
+            "width":window.innerWidth,
+            "height":window.innerHeight
+        })
+    }
+    $(function(){
+        $("#bg").css({
+            "width":window.innerWidth,
+            "height":window.innerHeight
+        })
+    })
+
+    function sub(){
+        var $username=$("#username");
+        var $userpass=$("#userpass");
+        if($username.val()==""||$userpass.val()==""){
+            if($username.val()==""){
+                alert("请输入用户名");
+                $username.focus();
+                return false;
+            }else{
+                alert("请输入密码");
+                $userpass.focus();
+                return false;
+            }
+        }
+        return true;
+    }
+    </script>
+</body>
+</html>

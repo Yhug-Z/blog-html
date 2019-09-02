@@ -13,7 +13,7 @@
     <script src="js/system.js"></script>
 
 </head>
-    
+
 <body>
     <div id="layer1">
         <div class="lleft">
@@ -33,17 +33,19 @@
         </div>
 
     </div>
-</body>
+
     <script>
-        var layer1Imgs=["images/banner01.jpg",
-                        "images/banner02.jpg",
-                        "images/banner03.jpg" ]
+        var layer1Imgs = ["images/banner01.jpg",
+            "images/banner02.jpg",
+            "images/banner03.jpg"]
         console.log(layer1Imgs.length);
-        $(function(){
+        $(function () {
             $("body").prepend($(index.nav.html()));
             index.nav.event();
-            index.imgsEvent.imgsSwitch(layer1Imgs,$("#layer1 .lleft .swipe ul li"),$("#layer1 .lleft .swipe img"));
+            index.imgsEvent.imgsSwitch(layer1Imgs, $("#layer1 .lleft .swipe ul li"), $("#layer1 .lleft .swipe img"));
         })
-        
+
     </script>
+</body>
+
 </html>
