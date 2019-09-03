@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="css/style.css">
@@ -38,11 +38,13 @@
         var layer1Imgs = ["images/banner01.jpg",
             "images/banner02.jpg",
             "images/banner03.jpg"]
-        console.log(layer1Imgs.length);
+        var arrMassages = ["hhh","ooo","bbb"]
+        // console.log(layer1Imgs.length);
+        // console.log(index.nav.addr)
         $(function () {
             $("body").prepend($(index.nav.html()));
             index.nav.event();
-            index.imgsEvent.imgsSwitch(layer1Imgs, $("#layer1 .lleft .swipe ul li"), $("#layer1 .lleft .swipe img"));
+            index.imgsEvent.imgsSwitch(layer1Imgs,arrMassages, $("#layer1 .lleft .swipe ul li"), $("#layer1 .lleft .swipe img"));
         })
 
     </script>

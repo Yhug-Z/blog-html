@@ -1,0 +1,27 @@
+.bgimg{
+    width: 100%;
+    height: 220px;
+    background: url("../images/page_bg1.png") no-repeat;
+    background-size: cover;
+    /* margin-top: -20px; */
+}
+
+.items{
+    width: 1140px;
+    margin: 30px auto;
+    border: solid 0px red;
+    overflow: hidden;
+}
+.items .item{
+    background-color: #fff;
+    float: left;
+    width: 270px;
+    margin: 20px 5px 0 10px;
+    border: solid 0px red;
+}
+.items .clear{
+    margin-right:-10px;
+}
+.items .item p{
+    padding: 20px 0px 40px 30px;
+}

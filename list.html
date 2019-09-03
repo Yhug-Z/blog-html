@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章列表</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/system.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/list.css">
+
+</head>
+
+<body>
+    <div class="bgimg"></div>
+    <!-- <div class="title">
+        <div class="ltip">文章列表</div>
+        <div class="rtip">不要轻易放弃</div>
+    </div> -->
+
+    <div class="txtlist">
+        <div class="tleft">
+
+            <!-- 
+            <div class="txtbox" data-scroll-reveal="bottom 5px 3 3">
+                <div class="tlttip">Python语言在人工智能（AI）中的优势</div>
+                <div class="tltframe">
+                    <figure class="tltfleft">
+                        <img src="images/toppic01.jpg" alt="" srcset="">
+                    </figure>
+                    <p class="tltfright">本文探讨了Python语言在AI领域的优势与运用。谁会成为AI和大数据时代的第一开发语言？</p>
+                </div>
+            </div> -->
+
+
+
+        </div>
+        <div class="tright">
+            <h3 class="trh3">特别推荐</h3>
+
+        </div>
+    </div>
+
+
+    <script>
+        window.scrollReveal = new scrollReveal({ reset: true });
+        var arrTitle = ["文章列表", "不要轻易放弃"]
+        $(function () {
+            $("body").prepend($(index.nav.html()));
+            $(".bgimg").after($(index.nav.title(arrTitle)));
+            $(".txtlist .tleft").append($(index.articlelist.box()));
+            $(".txtlist .tright").append($(index.articlelist.commendBox()));
+            index.nav.event();
+        })    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.bgimg{
+    width:100%;
+    height: 220px;
+    background: url("../images/page_bg1.png") no-repeat;
+    background-size: cover;
+    /* margin-top: -20px; */
+}
+
+.txtsend{
+    width: 1140px;
+    overflow: hidden;
+    border: solid 0px red;
+    margin: 0 auto;
+}
+.txtsend .tsleft{
+    float: left;
+    width: 752px;
+    border: solid 0px red;
+}
+.txtsend .tsright {
+    float:right;
+    width: 365px;
+    background: #fff;
+    /* padding: 10px; */
+    margin: 20px 10px;
+}
+
+.txtsend .tsleft .send{
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+.txtsend .tsleft .send div{
+    margin: 20px 0px;
+}
+.txtsend .tsleft .send .stitle input{
+    padding: 8px 10px;
+    border:solid 1px #ccc;
+}
+.txtsend .tsleft .send .scon textarea{
+    width: 600px;
+    border:solid 1px #ccc;
+}
+.txtsend .tsleft .send .sbtn button{
+    padding: 10px 19px;
+    border-radius: 6px;
+    border:solid 1px #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+.txtsend .tsleft .send .sbtn button:hover{
+    color:#fff;
+    background-color: #555;
+}

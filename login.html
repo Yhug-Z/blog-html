@@ -56,9 +56,22 @@
                 $userpass.focus();
                 return false;
             }
+        }else{
+            // 保存用户名
+            // 本地存储对象，在浏览器对象中提供
+            // 设置本地存储对象的值
+            window.localStorage.setItem("username",$username.val());
+            return true;
         }
-        return true;
+       
     }
+    $(function(){
+        var _name=window.localStorage.getItem("username");
+        if(_name){
+            $("#username").val(_name);
+        }
+       
+    })
     </script>
 </body>
 </html>

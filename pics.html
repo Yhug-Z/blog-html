@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/system.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pics.css">
+</head>
+
+<body>
+    <div class="bgimg"></div>
+    <div class="items"></div>
+    <script>
+        $(function () {
+            var arrTitle = ["我的相册", "不要轻易放弃"]
+            $("body").prepend($(index.nav.html()));
+            $(".bgimg").after($(index.nav.title(arrTitle)));
+            $(".txtlist .tleft").append($(index.articlelist.box()));
+            $(".txtlist .tright").append($(index.articlelist.commendBox()));
+            index.nav.event();
+
+            $(".items").append(
+                $(index.pics.html('images/a.jpg', 'Python基础学习总结')),
+                $(index.pics.html('images/b.jpg', 'Python基础学习总结')),
+                $(index.pics.html('images/c.jpg', 'Python基础学习总结')),
+                $(index.pics.html('images/d.jpg', 'Python基础学习总结')),
+                $(index.pics.html('images/d.jpg', 'Python基础学习总结'))
+            )
+        })        
+    </script>
+</body>
+
+</html>

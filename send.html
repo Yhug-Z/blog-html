@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发表博客</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/system.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/send.css">
+</head>
+
+<body>
+    <div class="bgimg"></div>
+    <div class="txtsend">
+        <div class="tsleft">
+            <form action="" class="send">
+                <div class="stitle">
+                    <input type="text" id="title"> &nbsp;文章标题
+                </div>
+                <div class="scon">
+                    <textarea id="txt" cols="30" rows="10"></textarea>
+                </div>
+                <div class="sbtn">
+                    <button id="send">发表</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="tright">
+            <h3 class="trh3">特别推荐</h3>
+        </div>
+    </div>
+
+    <script>
+        var arrTitle = ["发表博客", "不要轻易放弃"]
+        $(function () {
+            $("body").prepend($(index.nav.html()));
+            $(".bgimg").after($(index.nav.title(arrTitle)));
+            $(".txtsend .tright").append($(index.articlelist.commendBox()));
+            index.nav.event();
+        })        
+    </script>
+</body>
+
+</html>
